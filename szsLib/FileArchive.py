@@ -94,6 +94,9 @@ def guessFileExt(data):
     elif data[:2] in [b'YB', b'BY']:
         return ".byml"
 
+    elif data[:4] == b'RARC':
+        return ".rarc"
+
     else:
         return ".bin"
 
