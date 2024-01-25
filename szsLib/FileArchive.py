@@ -15,6 +15,9 @@ def guessFileExt(data):
 
     elif data[:8] == b'BNSH\0\0\0\0':
         return ".bnsh"
+        
+    elif data[:8] == b'MsgFlwBn':
+        return ".msbf"
 
     elif data[:8] == b'MsgStdBn':
         return ".msbt"
